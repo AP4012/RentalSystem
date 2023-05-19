@@ -1,6 +1,6 @@
-package university.Library;
 
-class Book extends Item {
+
+class Book extends university.Library.Item {
     private String author;
     private String publisher;
    public Book(String id, String title, String genre, int releaseDate, double rentalFee, String author, String publisher) {

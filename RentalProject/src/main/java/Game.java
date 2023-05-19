@@ -1,6 +1,6 @@
-package university.Library;
 
-class Game extends Item {
+
+class Game extends university.Library.Item {
     private String platform;
     private String publisher;
 
