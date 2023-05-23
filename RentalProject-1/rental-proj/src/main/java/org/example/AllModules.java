@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class AllModules {
     public ArrayList<Game> games;
-    public ArrayList<Book> books;
+    public ArrayList<Book> books=new ArrayList<>();
     public ArrayList<Movie> movies;
-    public ArrayList<Customer> customers;
+    public ArrayList<Customer> customers=new ArrayList<>();
 
     public ArrayList<Game> getGames() {
         return games;

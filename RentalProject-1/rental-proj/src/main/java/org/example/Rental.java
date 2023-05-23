@@ -6,14 +6,16 @@ public class Rental {
     int id;
     Item item;
     Customer customer;
+    Integer customerId;
     Date rentalDate;
     Date returnDate;
 
     public Rental(Item item, Customer customer) {
-        this.id = customer.id + item.id;
+        this.id = customer.id + item.returnId();
+        this.customer= new Customer(customer.name, customer.email, customer.phone, customer.address, customer.id);
         this.item = item;
-        this.customer=customer;
-        item.isAvailable=false;
+        this.customerId = customer.id;
+        item.isAvailable = false;
     }
 
     public int getId() {
@@ -26,7 +28,8 @@ public class Rental {
     }
 
     public Customer getCustomer() {
-        return customer;
+        RentalStore rentalStore = new RentalStore();
+        return rentalStore.getCustomerById(customerId);
     }
 
     public Date getRentalDate() {

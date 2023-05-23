@@ -3,7 +3,7 @@ package org.example;
 import java.util.Date;
 
 public class Item {
-    int id;
+    private int id;
     String title;
     String genre;
     Date releaseDate;

@@ -315,92 +315,20 @@
       "rentals": []
     },
     {
-      "id": 4,
-      "item": {
-        "id": 3,
-        "title": "Pride and Prejudice",
-        "genre": "Romance",
-        "releaseDate": "Jan 28, 1813, 12:00:00 AM",
-        "isAvailable": false
-      },
-      "customer": {
-        "id": 1,
-        "name": "John Smith",
-        "email": "johnsmith@example.com",
-        "phone": "1234567890",
-        "address": "123 Main Street",
-        "rentals": []
-      },
-      "rentalDate": "May 19, 2023, 8:36:51 PM"
+      "id": 2,
+      "name": "Emily Johnson",
+      "email": "emilyjohnson@example.com",
+      "phone": "9876543210",
+      "address": "456 Oak Avenue",
+      "rentals": []
     },
     {
-      "id": 7,
-      "item": {
-        "id": 6,
-        "title": "The Great Gatsby",
-        "genre": "Fiction",
-        "releaseDate": "Apr 10, 1925, 12:00:00 AM",
-        "isAvailable": false
-      },
-      "customer": {
-        "id": 1,
-        "name": "John Smith",
-        "email": "johnsmith@example.com",
-        "phone": "1234567890",
-        "address": "123 Main Street",
-        "rentals": []
-      },
-      "rentalDate": "May 19, 2023, 8:36:51 PM"
-    },
-    {
-      "id": 4,
-      "item": {
-        "id": 3,
-        "title": "Pride and Prejudice",
-        "genre": "Romance",
-        "releaseDate": "Jan 28, 1813, 12:00:00 AM",
-        "isAvailable": false
-      },
-      "customer": {
-        "id": 1,
-        "name": "John Smith",
-        "email": "johnsmith@example.com",
-        "phone": "1234567890",
-        "address": "123 Main Street",
-        "rentals": []
-      },
-      "rentalDate": "May 19, 2023, 8:39:58 PM"
-    },
-    {
-      "id": 7,
-      "item": {
-        "id": 6,
-        "title": "The Great Gatsby",
-        "genre": "Fiction",
-        "releaseDate": "Apr 10, 1925, 12:00:00 AM",
-        "isAvailable": false
-      },
-      "customer": {
-        "id": 1,
-        "name": "John Smith",
-        "email": "johnsmith@example.com",
-        "phone": "1234567890",
-        "address": "123 Main Street",
-        "rentals": []
-      },
-      "rentalDate": "May 19, 2023, 8:39:58 PM"
-    },
-    {
-      "id": 4,
-      "item": {
-        "id": 3,
-        "title": "Pride and Prejudice",
-        "genre": "Romance"
-      }
+      "id": 3,
+      "name": "Michael Brown",
+      "email": "michaelbrown@example.com",
+      "phone": "5555555555",
+      "address": "789 Elm Street",
+      "rentals": []
     }
   ]
 }
-
-
-
-

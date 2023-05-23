@@ -10,8 +10,7 @@ public class Customer {
     String phone;
     String address;
     List<Rental> rentals=new ArrayList<>();
-
-    public Customer(String name, String email, String phone, String address, int id, List<Rental> rentals) {
+    public Customer(String name, String email, String phone, String address, int id) {
         this.id = id;
         this.name = name;
         this.email = email;

@@ -13,28 +13,28 @@ public class Main {
         Reader reader = new FileReader("C:\\Users\\NS\\IdeaProjects\\untitled9\\src\\test\\TestYourFork.json");
         AllModules allModules = gson.fromJson(reader, new TypeToken<AllModules>() {
         }.getType());
-
+        Customer Hosein = new Customer("Hosein","hoseinama1383@gmail.com","09906652919","babol",4);
         Customer Joshn = allModules.getCustomers().get(0);
         Customer Emily = allModules.getCustomers().get(1);
         Customer Brown = allModules.getCustomers().get(2);
 
         for (Item tempItem : allModules.getBooks()) {
-            if (tempItem.id == 3) RentalStore.rentItem(tempItem, Joshn);
-            else if (tempItem.id == 6) {
+            if (tempItem.returnId() == 3) RentalStore.rentItem(tempItem, Joshn);
+            else if (tempItem.returnId() == 6) {
                 RentalStore.rentItem(tempItem, Joshn);
             }
         }
 
         for (Item tempItem : allModules.getBooks()) {
-            if (tempItem.id == 1) RentalStore.rentItem(tempItem, Emily);
-            else if (tempItem.id == 7) {
+            if (tempItem.returnId() == 1) RentalStore.rentItem(tempItem, Emily);
+            else if (tempItem.returnId() == 7) {
                 RentalStore.rentItem(tempItem, Emily);
             }
         }
 
         for (Item tempItem : allModules.getBooks()) {
-            if (tempItem.id == 9) RentalStore.rentItem(tempItem, Brown);
-            else if (tempItem.id == 4) {
+            if (tempItem.returnId() == 9) RentalStore.rentItem(tempItem, Brown);
+            else if (tempItem.returnId() == 4) {
                 RentalStore.rentItem(tempItem, Brown);
             }
         }
