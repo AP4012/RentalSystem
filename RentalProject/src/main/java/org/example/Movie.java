@@ -1,21 +1,20 @@
+package org.example;
 
 
 public class Movie extends Item{
-    private String id;
-    private String title;
-    private String genre;
+    //private String title;  از فایل اصلی باید پاک شن
+    //private String genre;
     private String director;
     private String cast;
-    private int releaseDate;
-    private boolean available;
+    //private boolean available;
 
-    public Movie(String title, String genre, String director, String cast, int releaseDate, String id) {
+    public Movie(String title, String genre, String director, String cast, int releaseDate, int id) {
         super(id,title,genre,releaseDate);
         this.title = title;
         this.genre = genre;
         this.director = director;
         this.cast = cast;
-        this.releaseDate = releaseDate;
+        this.releaseDate = String.valueOf(releaseDate);
         this.id=id;
         this.available = true;
     }
@@ -38,7 +37,7 @@ public class Movie extends Item{
         return cast;
     }
 
-    public int getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
 

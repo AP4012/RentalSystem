@@ -1,3 +1,4 @@
+package org.example;
 
 
 import java.util.ArrayList;
@@ -5,8 +6,12 @@ import java.util.Date;
 import java.util.List;
 
 public class RentalStore {
-    private List<Item> items;
-    private List<Customer> customers;
+    private static List<Item> items;
+    private  static List<Customer> customers;
+
+    public static ArrayList<Rental> rentalList = new ArrayList<>();
+
+
 
 
 
@@ -60,7 +65,7 @@ public class RentalStore {
         return null;
     }
 
-    public Item getItemById(String id) {
+    public Item getItemById(int id) {
         for (Item item : this.items) {
             if (item.getId() == id) {
                 return item;

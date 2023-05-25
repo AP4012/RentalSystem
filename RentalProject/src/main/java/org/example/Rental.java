@@ -1,3 +1,4 @@
+package org.example;
 
 
 import java.util.Date;
@@ -6,14 +7,14 @@ public class Rental {
     private Item item;
     private Customer customer;
     private int id;
-    private Date rentalDate;
-    private Date returnDate;
+    public Date rentalDate=new Date();
+    public Date returnDate;
 
     public Rental(Item item, Customer customer, int id) {
         this.item = item;
-        this.customer = customer;
+        this.customer = new Customer(customer.getName(), customer.getEmail(), customer.getPhone(), customer.getAddress(), customer.getId());
         this.id = id;
-        this.rentalDate = new Date();
+        this.rentalDate=new Date();
     }
 
     public int getId() {
@@ -27,13 +28,13 @@ public class Rental {
     public Customer getCustomer() {
         return this.customer;
     }
-
-    public Date getRentalDate() {
-        return this.rentalDate;
-    }
+    public Date getRentalDate(){return this.rentalDate;}
 
     public Date getReturnDate() {
         return this.returnDate;
+    }
+    public void setRentalDate(Date rentalDate) {
+        this.rentalDate = rentalDate;
     }
 
     public void setReturnDate(Date date) {

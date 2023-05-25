@@ -1,10 +1,11 @@
+package org.example;
 
 
-class Game extends university.Library.Item {
+class Game extends Item {
     private String platform;
     private String publisher;
 
-    public Game(String id, String title, String genre, int releaseDate, String platform, String publisher) {
+    public Game(int id, String title, String genre, int releaseDate, String platform, String publisher) {
         super(id, title, genre, releaseDate);
         this.platform = platform;
         this.publisher = publisher;

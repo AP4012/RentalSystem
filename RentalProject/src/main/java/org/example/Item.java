@@ -1,20 +1,22 @@
+package org.example;
 
 
 public class Item {
-    public String id;
+    public int id;
     public String title;
     public String genre;
-    public int releaseDate;
-     public boolean available = true;
+    public String releaseDate;
+     public boolean available = true
+             ;
 
-    public Item(String id, String title, String genre, int releaseDate) {
+    public Item(int id, String title, String genre, int releaseDate) {
         this.id = id;
         this.title = title;
         this.genre = genre;
-        this.releaseDate = releaseDate;
+        this.releaseDate = String.valueOf(releaseDate);
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -26,14 +28,14 @@ public class Item {
         return genre;
     }
 
-    public int getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
 
     public boolean isAvailable() {
         return  available;
     }
-    public boolean setAvailable(boolean status){
-        return  available;
+    public void  setAvailable(boolean status){
+        available=status;
     }
 }

@@ -1,4 +1,4 @@
-
+package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class Customer {
     private String phone;
     private String address;
     private int id;
-    private List<Rental> rentals;
+    public ArrayList<Rental> rentals;
 
 
     public Customer(String name, String email, String phone, String address, int id) {
@@ -18,6 +18,7 @@ public class Customer {
         this.phone = phone;
         this.address = address;
         this.id = id;
+        rentals=new ArrayList<>();
 
     }
 
@@ -37,11 +38,28 @@ public class Customer {
         return this.phone;
     }
 
+
+
     public String getAddress() {
         return this.address;
     }
+    public void setRentals(ArrayList<Rental> rentals) {
+
+        this.rentals = rentals;
+    }
+    public ArrayList<Rental>getRentals(){
+        return rentals;
+        }
+
+
+
+
+
 
     public void addRental(Rental rental) {
+        if (rentals==null)
+            rentals=new ArrayList<>();
+        rentals.add(rental);
     }
 }
 
